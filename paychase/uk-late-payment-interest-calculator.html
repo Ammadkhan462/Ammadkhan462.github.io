@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UK Late Payment Interest Calculator (8% + Base Rate) | PayChase</title>
+<meta name="description" content="Free UK late payment interest calculator for overdue business invoices. Statutory interest at 8% plus Bank of England base rate, plus £40, £70 or £100 fixed compensation.">
+<link rel="canonical" href="https://ammadkhan462.github.io/paychase/uk-late-payment-interest-calculator.html">
+<meta name="theme-color" content="#0A0B10">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PayChase">
+<meta property="og:title" content="UK Late Payment Interest Calculator (8% + Base Rate) | PayChase">
+<meta property="og:description" content="Free UK late payment interest calculator for overdue business invoices. Statutory interest at 8% plus Bank of England base rate, plus £40, £70 or £100 fixed compensation.">
+<meta property="og:url" content="https://ammadkhan462.github.io/paychase/uk-late-payment-interest-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/PlusJakartaSans-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "UK Late Payment Interest Calculator",
+  "url": "https://ammadkhan462.github.io/paychase/uk-late-payment-interest-calculator.html",
+  "description": "Calculate statutory interest and fixed compensation on overdue business-to-business invoices under the Late Payment of Commercial Debts (Interest) Act 1998.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (runs in the browser)",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I charge late payment interest to a consumer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The Late Payment of Commercial Debts (Interest) Act 1998 only covers business-to-business debts, including sales to the public sector. It does not apply to sales to private individuals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What interest rate applies to late commercial payments in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Statutory interest is 8% a year plus the Bank of England base rate. The base rate used is fixed for six months at a time, so check the rate that applied on the relevant reference date on the Bank of England website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much fixed compensation can I claim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On top of interest you can claim a fixed sum per late invoice: £40 for debts under £1,000, £70 for debts of £1,000 to £9,999.99, and £100 for debts of £10,000 or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to charge statutory interest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is your right, not an obligation. Many freelancers mention it in a reminder and waive it if the client pays promptly."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./" aria-label="PayChase home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><g transform="translate(6.2 5) scale(0.02333)"><path d="M84 0H330A190 190 0 0 1 520 190V220A190 190 0 0 1 330 410H140V530A70 70 0 0 1 0 530V84A84 84 0 0 1 84 0Z" fill="#fff"/><path d="M222 212L296 284L426 150" fill="none" stroke="#22C987" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>PayChase</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"><i></i><i></i></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="payment-reminder-templates.html">Reminder templates</a></li>
+        <li><a href="final-payment-reminder-letter.html">Final letter</a></li>
+        <li><a href="uk-late-payment-interest-calculator.html" aria-current="page">UK calculator</a></li>
+        <li><a href="eu-late-payment-interest-calculator.html">EU calculator</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm nav-cta" href="https://play.google.com/store/apps/details?id=com.paychase.invoice.followup.payment.reminder" rel="noopener">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="bg-fx" aria-hidden="true"><div class="bg-grid"></div><div class="glow glow-a"></div><div class="glow glow-b"></div></div>
+    <div class="container">
+      <ol class="crumbs"><li><a href="./">Home</a></li><li>Free tools</li></ol>
+      <span class="eyebrow">Free calculator &middot; UK &middot; GBP</span>
+      <h1>UK late payment interest calculator</h1>
+      <p class="lead">Work out the statutory interest and fixed compensation you can add to an overdue business invoice under the Late Payment of Commercial Debts (Interest) Act 1998.</p>
+      <div class="notice"><p><strong>Business-to-business debts only.</strong> The Act does not apply to invoices sent to consumers. This calculator gives an estimate and is not legal advice.</p></div>
+    </div>
+  </section>
+
+  <section class="section-calc">
+    <div class="container">
+      <div class="calc">
+        <form id="uk-calc" class="card" novalidate>
+          <h2>Your invoice</h2>
+          <fieldset class="fgroup">
+            <legend><span aria-hidden="true">1</span>Invoice</legend>
+            <div class="field">
+              <label for="uk-calc-debt">Unpaid invoice amount (£)</label>
+              <div class="input-affix"><span aria-hidden="true">£</span><input id="uk-calc-debt" name="debt" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 2500"></div>
+            </div>
+            <div class="frow">
+              <div class="field">
+                <label for="uk-calc-ref">Invoice number <span class="muted">(optional)</span></label>
+                <input id="uk-calc-ref" name="invoiceRef" type="text" autocomplete="off" placeholder="e.g. INV-1042">
+              </div>
+              <div class="field">
+                <label for="uk-calc-due">Payment due date</label>
+                <input id="uk-calc-due" name="dueDate" type="date">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fgroup">
+            <legend><span aria-hidden="true">2</span>Interest rate</legend>
+            <div class="field">
+              <label for="uk-calc-base">Bank of England base rate (%)</label>
+              <div class="input-affix suffix"><input id="uk-calc-base" name="baseRate" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 4.00"><span aria-hidden="true">%</span></div>
+              <span class="hint">Enter the base rate that applies to your debt. Check it at <a href="https://www.bankofengland.co.uk/monetary-policy/the-interest-rate-bank-rate" rel="noopener">bankofengland.co.uk</a>. The calculator adds the 8% for you.</span>
+            </div>
+          </fieldset>
+          <fieldset class="fgroup">
+            <legend><span aria-hidden="true">3</span>Period</legend>
+            <div class="field">
+              <label class="check"><input name="useToday" type="checkbox" checked> Calculate up to today</label>
+            </div>
+            <div class="field">
+              <label for="uk-calc-asof">Or calculate up to this date</label>
+              <input id="uk-calc-asof" name="asOfDate" type="date">
+              <span class="hint">Untick "Calculate up to today" to choose another date, for example the date you expect to be paid.</span>
+            </div>
+          </fieldset>
+          <p id="uk-calc-error" class="error" role="alert"></p>
+        </form>
+        <div class="card results" aria-live="polite">
+          <h2>What you can claim</h2>
+          <div class="res-hero">
+            <span class="lbl">Interest + compensation</span>
+            <span class="val" data-hero>&mdash;</span>
+            <span class="sub"><span class="pill c-brand">Total now due <span data-out="total">&mdash;</span></span></span>
+          </div>
+          <dl>
+            <div class="row"><dt>Days late</dt><dd data-out="days">&mdash;</dd></div>
+            <div class="row"><dt>Interest rate (8% + base rate)</dt><dd data-out="rate">&mdash;</dd></div>
+            <div class="row"><dt>Interest per day</dt><dd data-out="daily">&mdash;</dd></div>
+            <div class="row"><dt>Interest to date</dt><dd data-out="interest">&mdash;</dd></div>
+            <div class="row"><dt>Fixed compensation</dt><dd data-out="compensation">&mdash;</dd></div>
+            <div class="row"><dt>Interest + compensation</dt><dd data-out="claimable">&mdash;</dd></div>
+            <div class="row total"><dt>Total now due</dt><dd data-out="total">&mdash;</dd></div>
+          </dl>
+          <div class="msg-box">
+            <div class="field">
+              <label for="uk-calc-message">Message you can paste into your reminder</label>
+              <textarea id="uk-calc-message" readonly></textarea>
+            </div>
+            <button class="copy-btn primary" type="button" data-copy-target="#uk-calc-message">Copy message</button>
+            <p class="privacy-note">Calculated in your browser. Nothing you type is sent anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-labelledby="rules-h">
+    <div class="container prose reveal">
+      <h2 id="rules-h">How UK statutory late payment interest works</h2>
+      <h3>Who can claim it</h3>
+      <p>You can claim if you are a business (including a sole trader or freelancer) and you supplied goods or services on credit to another business or a public sector body, and they paid late. It does not cover sales to private individuals.</p>
+      <h3>When a payment counts as late</h3>
+      <ul>
+        <li>If you agreed a payment date, the payment is late from the day after that date.</li>
+        <li>If you did not agree one, the law sets a default: 30 days after the customer received the invoice or the goods or services, whichever is later.</li>
+        <li>If your contract already sets its own fair late-payment terms, those usually apply instead of the Act.</li>
+      </ul>
+      <h3>The interest rate</h3>
+      <p>Statutory interest is <strong>8% a year plus the Bank of England base rate</strong>. The base rate used is fixed in six-month blocks: for debts that became overdue between 1 January and 30 June, use the base rate on the previous 31 December; for debts overdue between 1 July and 31 December, use the rate on 30 June. That is why this calculator asks you to enter the base rate rather than assuming it.</p>
+      <h3>The calculation</h3>
+      <p>It is simple interest, not compound:</p>
+      <div class="formula"><ol>
+        <li>Yearly interest = amount owed &times; (8% + base rate)</li>
+        <li>Daily interest = yearly interest &divide; 365</li>
+        <li>Interest owed = daily interest &times; number of days late</li>
+      </ol></div>
+      <p>Example: &pound;5,000 owed, base rate 4%, 30 days late. Rate = 12%. Yearly interest = &pound;600. Daily = &pound;1.64. Interest = &pound;49.32. Add &pound;70 fixed compensation for a total claim of &pound;119.32 on top of the invoice.</p>
+      <h3>Fixed compensation</h3>
+      <ul>
+        <li>Debt under &pound;1,000: &pound;40</li>
+        <li>Debt of &pound;1,000 to &pound;9,999.99: &pound;70</li>
+        <li>Debt of &pound;10,000 or more: &pound;100</li>
+      </ul>
+      <p>You can claim this once per late invoice. You may also be able to claim reasonable extra costs of recovering the debt if they are higher than the fixed sum.</p>
+      <h3>How to use it in practice</h3>
+      <p>Tell your client in writing that the invoice is late and that statutory interest and compensation can now be added. Keep the tone calm and factual. Mentioning the Act often gets an invoice paid, and you can choose to waive the extra if they pay promptly.</p>
+      <p>Official guidance: <a href="https://www.gov.uk/late-commercial-payments-interest-debt-recovery" rel="noopener">Late commercial payments: charging interest and debt recovery (GOV.UK)</a>.</p>
+      <p class="small muted">This page explains the rules in plain words and may not cover every situation. It is not legal advice. Check the official guidance or get professional advice for your case.</p>
+      <p>Need a polite first nudge instead? Use the <a href="payment-reminder-templates.html">free payment reminder templates</a> or the <a href="final-payment-reminder-letter.html">final payment reminder letter</a>.</p>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-labelledby="faq-h">
+    <div class="container faq-wrap">
+      <div class="section-head reveal">
+        <p class="kicker">FAQ</p>
+        <h2 id="faq-h">Questions</h2>
+      </div>
+      <div class="faq reveal" style="--i:1">
+      <details>
+        <summary>Can I charge late payment interest to a consumer?</summary>
+        <p>No. The Late Payment of Commercial Debts (Interest) Act 1998 only covers business-to-business debts, including sales to the public sector. It does not apply to sales to private individuals.</p>
+      </details>
+      <details>
+        <summary>What interest rate applies to late commercial payments in the UK?</summary>
+        <p>Statutory interest is 8% a year plus the Bank of England base rate. The base rate used is fixed for six months at a time, so check the rate that applied on the relevant reference date on the Bank of England website.</p>
+      </details>
+      <details>
+        <summary>How much fixed compensation can I claim?</summary>
+        <p>On top of interest you can claim a fixed sum per late invoice: £40 for debts under £1,000, £70 for debts of £1,000 to £9,999.99, and £100 for debts of £10,000 or more.</p>
+      </details>
+      <details>
+        <summary>Do I have to charge statutory interest?</summary>
+        <p>No. It is your right, not an obligation. Many freelancers mention it in a reminder and waive it if the client pays promptly.</p>
+      </details>
+          </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="bg-grid" aria-hidden="true"></div>
+        <h2>Send these reminders in one tap with PayChase</h2>
+        <p>PayChase tracks your unpaid invoices, tells you who to follow up with today and sends the right reminder on WhatsApp or email, in English, Roman Urdu, Urdu, Hindi or Arabic. Works offline, no account needed.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.paychase.invoice.followup.payment.reminder" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 3.9v16.2a1 1 0 0 0 1.52.85l13.2-8.1a1 1 0 0 0 0-1.7L8.02 3.05A1 1 0 0 0 6.5 3.9z"/></svg>Get it on Google Play</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><g transform="translate(6.2 5) scale(0.02333)"><path d="M84 0H330A190 190 0 0 1 520 190V220A190 190 0 0 1 330 410H140V530A70 70 0 0 1 0 530V84A84 84 0 0 1 84 0Z" fill="#fff"/><path d="M222 212L296 284L426 150" fill="none" stroke="#22C987" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/></g></svg></span>PayChase</a>
+        <p>Invoice follow-up for freelancers and small agencies. This website uses no cookies, analytics or trackers.</p>
+      </div>
+      <div>
+        <h2>Free tools</h2>
+        <ul>
+          <li><a href="payment-reminder-templates.html">Payment reminder templates</a></li>
+          <li><a href="final-payment-reminder-letter.html">Final reminder letter</a></li>
+          <li><a href="uk-late-payment-interest-calculator.html">UK late payment calculator</a></li>
+          <li><a href="eu-late-payment-interest-calculator.html">EU late payment calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>App</h2>
+        <ul>
+          <li><a href="./">About PayChase</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.paychase.invoice.followup.payment.reminder" rel="noopener">PayChase on Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal"><span>The tools and templates on this site are general information, not legal or financial advice.</span><span>Google Play is a trademark of Google LLC.</span></p>
+  </div>
+</footer>
+<div id="live-region" class="sr-only" aria-live="polite" role="status"></div>
+<script src="app.js" defer></script>
+</body>
+</html>

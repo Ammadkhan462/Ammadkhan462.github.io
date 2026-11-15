@@ -1,0 +1,5 @@
+# Replace ammadkhan462.github.io/paychase with your real domain before deploying.
+User-agent: *
+Allow: /
+
+Sitemap: https://ammadkhan462.github.io/paychase/sitemap.xml
